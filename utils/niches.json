@@ -1,0 +1,20 @@
+[
+    {
+        "name": "E-commerce",
+        "slug": "ecommerce",
+        "sic": "47910 - Retail sale via mail order houses or via Internet",
+        "icon": "🛒"
+    },
+    {
+        "name": "Data Business",
+        "slug": "internet",
+        "sic": "63990 - Other information service activities n.e.c.",
+        "icon": "📈"
+    },
+    {
+        "name": "Manufacturing",
+        "slug": "manufacturing",
+        "sic": "32990 - Other manufacturing n.e.c.",
+        "icon": "🏭"
+    }
+]

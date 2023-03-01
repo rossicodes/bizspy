@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model companies {
+  name               String?
+  number             String? @unique
+  status             String?
+  address_1          String?
+  address_2          String?
+  town               String?
+  county             String?
+  country            String?
+  postcode           String?
+  incorporation_date String?
+  accounts_due_date  String?
+  accounts_last_date String?
+  accounts_category  String?
+  sic_code_1         String?
+  sic_code_2         String?
+  sic_code_3         String?
+  sic_code_4         String?
+  uri                String?
+  id                 Int     @unique @default(autoincrement())
+  flag               Boolean @default(false)
+  accounts_link_1    String?
+  accounts_link_2    String?
+  principal_activity String?
+  turnover           String?
+  cost_of_sales      String?
+  gross_profit       String?
+  admin_expenses     String?
+  operating_profit   String?
+  operating_loss     String?
+  tax_on_profit      String?
+  profit             String?
+  loss               String?
+  reviewed           Boolean @default(false)
+}
